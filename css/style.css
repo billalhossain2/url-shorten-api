@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shorten-container{
+    background: #74e60b8a;
+    width: 50%;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    margin: 50px auto;
+    position: relative;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.shorten-container input{
+    border: none;
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.shorten-container button{
+    border: none;
+    border-radius: 5px;
+    background: #03bfee;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center
+}
+
+/* Modal Body  */
+.modal-body{}
+.modal-body ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 1.3rem;
+}
+
+ul div.link-body{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul div.link-body li.link{
+    background: #865c00;
+    display: block;
+    width: 65%;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.modal-body ul li button{
+    border: none;
+    border-radius: 5px;
+    background: #e4dedd;
+    text-align: center;
+    color: #000;
+    width: 150px;
+}
+
+/* Copy Alert Box  */
+.link-button-container{
+    position: relative;
+}
+.copy-alert{
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: -33px;
+    background: #555555;
+    color: #fff;
+    width: 100%;
+    padding: 3px 0;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.copy-alert::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .link-button-container:hover .copy-alert{
+    display: block;
+}
+.wrapper{
+    position: relative;
+}
+/* //Error message box  */
+#url-error-message-container{
+    color: maroon;
+    font-size: 1.5rem;
+    height: 35px;
+    font-weight: bolder;
+    position: absolute;
+    left: 35%;
+    top: 0;
+    z-index: 1;
+}
+
+/* //Eye icon style  */
+.fa-eye{
+    color: maroon;
+    font-size: 2rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* link-creating-spinner  */
+.link-creating-spinner{
+    display: none;
+    margin-top: 10px;
+}
